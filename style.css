@@ -1,0 +1,43 @@
+/* Basic reset for removing margins, paddings, and default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the body and HTML occupy the full viewport height */
+html, body {
+    height: 100%;
+    background-color: #000; /* Set the background to black (space background) */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the game canvas */
+canvas {
+    display: block;
+    margin: 0 auto;           /* Center the canvas horizontally */
+    background-color: black;  /* Black background to simulate space */
+    border: 1px solid #fff;   /* Optional: Thin white border for visual separation */
+}
+
+/* Optional styling for game-over and score displays */
+#gameOverText, #scoreText {
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+}
+
+/* Specific styling for the game-over text */
+#gameOverText {
+    top: 40%;
+    font-size: 3rem;
+    color: red; /* Game over text in red */
+}
+
+/* Specific styling for the score */
+#scoreText {
+    top: 10%;
+    font-size: 2rem;
+}
